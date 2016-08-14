@@ -1,0 +1,62 @@
+{
+  "objectName" : "amdemultiplexer",
+  "tags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Decompacts multiple signals from a cable",
+  "shortdescription" : "Demultiplexer",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 15,
+
+  "inventoryIcon" : "demultiplexericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "demultiplexer.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "demultiplexer.lua",
+    "/scripts/npcToyObject.lua",
+    "/scripts/smartcable.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/avianconsole_on.wav" ],
+      "off" : [ "/sfx/objects/avianconsole_off.wav" ]
+    }
+  },
+  "animationParts" : {
+    "switch" : "demultiplexer.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inboundNodes" : [ [1, 4] ],
+  "outboundNodes" : [
+    [0, 3], [2, 3],
+    [0, 2], [2, 2],
+    [0, 1], [2, 1],
+    [0, 0], [2, 0]
+  ],
+
+
+  "npcToy": {
+    "ownerOnly" : true,
+    "influence" : [
+      "wallswitch"
+    ],
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "defaultReactions" : {},
+    "maxNpcs" : 1
+  }
+}

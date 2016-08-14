@@ -1,0 +1,112 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "switchState" : {
+        "default" : "zero",
+        "states" : {
+          "zero" : {
+            "frames" : 1
+          },
+          "one" : {
+            "frames" : 1
+          },
+          "two" : {
+            "frames" : 1
+          },
+          "three" : {
+            "frames" : 1
+          },
+          "four" : {
+            "frames" : 1
+          },
+          "five" : {
+            "frames" : 1
+          },
+          "six" : {
+            "frames" : 1
+          },
+          "seven" : {
+            "frames" : 1
+          },
+          "eight" : {
+            "frames" : 1
+          },
+          "nine" : {
+            "frames" : 1
+          },
+          "ten" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "switch" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "switchState" : {
+            "zero" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.zero"
+              }
+            },
+            "one" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.one"
+              }
+            },
+            "two" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.two"
+              }
+            },
+            "three" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.three"
+              }
+            },
+            "four" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.four"
+              }
+            },
+            "five" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.five"
+              }
+            },
+            "six" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.six"
+              }
+            },
+            "seven" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.seven"
+              }
+            },
+            "eight" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.eight"
+              }
+            },
+            "nine" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.nine"
+              }
+            },
+            "ten" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.ten"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

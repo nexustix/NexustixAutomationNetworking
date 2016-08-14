@@ -1,0 +1,34 @@
+{
+  "objectName" : "ammanarelay",
+  "tags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Transports mana from A to B",
+  "shortdescription" : "Manarelay",
+  "race" : "generic",
+
+  "price" : 15,
+
+  "inventoryIcon" : "manarelayicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "manarelay_back.png:<color>.ten",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "manarelay.lua",
+    "/scripts/mananetwork.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "manarelay.animation",
+  "animationParts" : {
+    "switch" : "manarelay_back.png"
+  },
+  "animationPosition" : [0, 0]
+}

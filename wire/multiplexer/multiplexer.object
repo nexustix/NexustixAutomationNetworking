@@ -1,0 +1,49 @@
+{
+  "objectName" : "ammultiplexer",
+  "tags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Compacts multiple signals into one cable",
+  "shortdescription" : "Multiplexer",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 15,
+
+  "inventoryIcon" : "multiplexericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "multiplexer.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "multiplexer.lua",
+    "/scripts/smartcable.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/avianconsole_on.wav" ],
+      "off" : [ "/sfx/objects/avianconsole_off.wav" ]
+    }
+  },
+  "animationParts" : {
+    "switch" : "multiplexer.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outboundNodes" : [ [1, 4] ],
+  "inboundNodes" : [
+    [0, 3], [2, 3],
+    [0, 2], [2, 2],
+    [0, 1], [2, 1],
+    [0, 0], [2, 0]
+  ]
+}
