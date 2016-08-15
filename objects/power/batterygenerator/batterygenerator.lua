@@ -55,7 +55,7 @@ function updateDisplay(batteryCount)
     if batteryCount < 1 then
         animator.setAnimationState("switchState", "zero")
 
-    elseif batteryCount == 10 then
+    elseif batteryCount >= 10 then
         animator.setAnimationState("switchState", "ten")
 
     elseif batteryCount >= 9 then
