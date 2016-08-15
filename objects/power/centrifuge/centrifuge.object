@@ -1,0 +1,30 @@
+{
+  "objectName" : "nan_centrifuge",
+  "objectType" : "container",
+  "rarity" : "Common",
+  "price" : 110,
+  "description" : "A centrifuge",
+  "shortdescription" : "Centrifuge",
+  "race" : "generic",
+
+  "inventoryIcon" : "centrifugeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centrifuge.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+    ],
+
+    "openSounds" : [ "/sfx/objects/locker_open.ogg" ],
+    "slotCount" : 10,
+    "uiConfig" : "/interface/centrifuge/centrifuge.config",
+    "frameCooldown" : 67,
+    "autoCloseCooldown" : 3600
+}
