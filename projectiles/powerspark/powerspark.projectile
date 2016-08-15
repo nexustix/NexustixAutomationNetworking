@@ -1,0 +1,14 @@
+{
+  "projectileName" : "powerspark",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "powerspark.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "power" : 50,
+  "emitters" : [ "iceplasma" ],
+  "supportsProcessing" : true,
+  "lightColor" : [159, 151, 7],
+  "damageKind" : "plasma"
+}

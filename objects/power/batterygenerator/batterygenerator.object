@@ -1,0 +1,44 @@
+{
+  "objectName" : "nan_batterygenerator",
+  "rarity" : "Common",
+  "price" : 25,
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "description" : "A device to extract battery-power",
+  "shortdescription" : "Battery-power extractor",
+  "race" : "generic",
+
+  "inventoryIcon" : "batterygeneratoricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "batterygenerator.png:<color>.zero",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+],
+
+  "scripts" : [
+      "batterygenerator.lua",
+      "/scripts/powernode.lua"
+  ],
+  "scriptDelta" : 26,
+
+  "animation" : "batterygenerator.animation",
+  "animationParts" : {
+    "switch" : "batterygenerator.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "openSounds" : [ "/sfx/objects/cardboardbox_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/cardboardbox_close.ogg" ],
+  "slotCount" : 1,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

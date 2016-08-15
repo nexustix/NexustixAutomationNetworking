@@ -1,0 +1,12 @@
+{
+  "name" : "NexustixAutomationNetworking",
+  "version" : "v0.1.0",
+  "path" : ".",
+  "dependencies" : [],
+  "metadata" : {
+    "displayName" : "Nexustix Automation and Networking"
+    "author" : "nexustix",
+    "version" : "v0.1.0",
+    "description" : "Automate all the things ?"
+  }
+}

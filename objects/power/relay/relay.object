@@ -1,0 +1,36 @@
+{
+  "objectName" : "nan_relay",
+  "tags": ["nan_power","nan_relay"],
+  "rarity" : "Common",
+  "price" : 25,
+  "description" : "A relay",
+  "shortdescription" : "Power relay",
+  "race" : "generic",
+
+  "inventoryIcon" : "relayicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "relay.png:<color>.zero",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+],
+
+  "scripts" : [
+      "relay.lua",
+      "/scripts/powernode.lua"
+  ],
+  "scriptDelta" : 13,
+
+  "animation" : "relay.animation",
+  "animationParts" : {
+    "switch" : "relay.png"
+  },
+  "animationPosition" : [0, 0]
+}
