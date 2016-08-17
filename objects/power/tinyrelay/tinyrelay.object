@@ -1,0 +1,34 @@
+{
+  "objectName" : "nan_tinyrelay",
+  "rarity" : "Common",
+  "price" : 10,
+  "description" : "A tiny relay",
+  "shortdescription" : "Tiny relay",
+  "race" : "generic",
+
+  "inventoryIcon" : "tinyrelayicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "tinyrelay.png:<color>.zero",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+    ],
+    "animation" : "tinyrelay.animation",
+    "animationParts" : {
+      "switch" : "tinyrelay.png"
+    },
+    "animationPosition" : [0, 0],
+
+    "scripts" : [
+        "tinyrelay.lua",
+        "/scripts/powernode.lua"
+    ],
+    "scriptDelta" : 13
+}

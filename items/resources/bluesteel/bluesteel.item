@@ -1,0 +1,8 @@
+{
+  "itemName" : "nan_bluesteel",
+  "rarity" : "Common",
+  "inventoryIcon" : "bluesteel.png",
+  "description" : "A bluesteel plate",
+  "shortdescription" : "Bluesteel",
+  "largeImage" : "bluesteel.png"
+}

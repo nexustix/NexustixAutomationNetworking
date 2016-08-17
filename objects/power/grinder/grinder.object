@@ -1,16 +1,16 @@
 {
-  "objectName" : "nan_centrifuge",
+  "objectName" : "nan_grinder",
   "objectType" : "container",
   "rarity" : "Common",
   "price" : 110,
-  "description" : "A centrifuge",
-  "shortdescription" : "Centrifuge",
+  "description" : "A grinder",
+  "shortdescription" : "Grinder",
   "race" : "generic",
 
-  "inventoryIcon" : "centrifugeicon.png",
+  "inventoryIcon" : "grindericon.png",
   "orientations" : [
     {
-      "dualImage" : "centrifuge.png:<color>",
+      "dualImage" : "grinder.png:<color>",
 
       "imagePosition" : [0, 0],
       "frames" : 1,
@@ -24,7 +24,7 @@
 
     "openSounds" : [ "/sfx/objects/locker_open.ogg" ],
     "slotCount" : 10,
-    "uiConfig" : "/interface/centrifuge/centrifuge.config",
+    "uiConfig" : "/interface/grinder/grinder.config",
     "frameCooldown" : 67,
     "autoCloseCooldown" : 3600
 }

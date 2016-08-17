@@ -1,0 +1,8 @@
+{
+  "itemName" : "nan_teledynamium",
+  "rarity" : "Common",
+  "inventoryIcon" : "teledynamium.png",
+  "description" : "A teledynamium crystal",
+  "shortdescription" : "Teledynamium crystal",
+  "largeImage" : "teledynamium.png"
+}

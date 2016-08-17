@@ -1,10 +1,11 @@
 function init()
-  sb.logInfo("[NAN] Relay init")
+  sb.logInfo("[NAN] Tinyrelay init")
   powernode.init()
 
-  powernode.relative_x = 1
-  powernode.relative_y = 1
+  powernode.relative_x = 0.5
+  powernode.relative_y = 0.5
   powernode.is_relay = true
+  powernode.buffersize = 10
   --powernode.init()
   --sb.logInfo("[NAN] "..tostring(storage.mana))
 
@@ -44,30 +45,18 @@ function updateDisplay()
   if powernode.getStoredPercent() < 10 then
     --world.logInfo("0")
     animator.setAnimationState("switchState", "zero")
-  elseif powernode.getStoredPercent() == 100 then
-    --world.logInfo("10")
-    animator.setAnimationState("switchState", "ten")
-  elseif powernode.getStoredPercent() >= 90 then
-    --world.logInfo("9")
-    animator.setAnimationState("switchState", "nine")
-  elseif powernode.getStoredPercent() >= 80 then
-    --world.logInfo("8")
-    animator.setAnimationState("switchState", "eight")
-  elseif powernode.getStoredPercent() >= 70 then
-    --world.logInfo("7")
-    animator.setAnimationState("switchState", "seven")
   elseif powernode.getStoredPercent() >= 60 then
     --world.logInfo("6")
-    animator.setAnimationState("switchState", "six")
+    animator.setAnimationState("switchState", "ten")
   elseif powernode.getStoredPercent() >= 50 then
     --world.logInfo("5")
-    animator.setAnimationState("switchState", "five")
+    animator.setAnimationState("switchState", "eight")
   elseif powernode.getStoredPercent() >= 40 then
     --world.logInfo("4")
-    animator.setAnimationState("switchState", "four")
+    animator.setAnimationState("switchState", "six")
   elseif powernode.getStoredPercent() >= 30 then
     --world.logInfo("3")
-    animator.setAnimationState("switchState", "three")
+    animator.setAnimationState("switchState", "four")
   elseif powernode.getStoredPercent() >= 20 then
     --world.logInfo("2")
     animator.setAnimationState("switchState", "two")

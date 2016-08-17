@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "nan_teledynamium", "count" : 1 },
+    { "item" : "nan_bluesteel", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "nan_batterygenerator",
+    "count" : 1
+  },
+  "groups" : [ "tinkertable", "generation", "all"]
+}

@@ -1,0 +1,29 @@
+{
+  "objectName" : "nan_tinkertable2",
+  "rarity" : "Common",
+  "price" : 110,
+  "description" : "A tinkering table",
+  "shortdescription" : "Tinkering table",
+  "race" : "generic",
+
+  "category" : "crafting",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/tinkertable/tinkertable.config",
+    "filter" : [ "tinkertable" ]
+  },
+
+  "inventoryIcon" : "tinkertable2.png",
+  "orientations" : [
+    {
+      "dualImage" : "tinkertable2.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+    ]
+}

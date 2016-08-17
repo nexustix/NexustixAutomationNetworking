@@ -1,0 +1,22 @@
+{
+  "objectName" : "nan_tinkertable",
+  "rarity" : "Common",
+  "price" : 110,
+  "description" : "An unusually small tinkering table. Add books if too low",
+  "shortdescription" : "Small tinkering table",
+  "race" : "generic",
+
+  "inventoryIcon" : "tinkertable.png",
+  "orientations" : [
+    {
+      "dualImage" : "tinkertable.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+    ]
+}

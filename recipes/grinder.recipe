@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "nan_teledynamium", "count" : 1 },
+    { "item" : "nan_bluesteel", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "nan_grinder",
+    "count" : 1
+  },
+  "groups" : [ "tinkertable", "machines" ]
+}

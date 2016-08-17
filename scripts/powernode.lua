@@ -31,7 +31,6 @@ function powernode.init()
 end
 
 function powernode.isPowernode()
-
     return true
 end
 
@@ -137,7 +136,7 @@ end
 function powernode.disperseToRelays()
     for k, v in pairs(powernode.relays) do
         if powernode.is_relay then
-            if world.callScriptedEntity(v, "powernode.getStoredPercent") < powernode.getStoredPercent()-2 then
+            if world.callScriptedEntity(v, "powernode.getStoredPercent") < powernode.getStoredPercent()-25 then
                 if powernode.sendPower(v) then
                     powernode.generateSpark(v)
                 end

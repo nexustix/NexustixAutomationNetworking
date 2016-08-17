@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "sand2", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "nan_teledynamium",
+    "count" : 1
+  },
+  "groups" : [ "tinkertable", "ingredients" ]
+}
