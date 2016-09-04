@@ -26,11 +26,21 @@ function onInteraction(args)
     end
   end
 
+  local awesomeString2 = ""
+  for k,v in pairs(powernode.devices) do
+    if k == #powernode.devices then
+        awesomeString2 = awesomeString2 .. tostring(v)
+    else
+        awesomeString2 = awesomeString2 .. tostring(v)..","
+    end
+  end
+
   return{ "ShowPopup",{ message =
     "ID: "..tostring(entity.id())
     .."\nPower: "..powernode.stored.."<"
     .."\nPercent: "..tostring(powernode.getStoredPercent()).."<"
-    .."\nConnections: "..awesomeString.."<"
+    .."\nRelays: "..awesomeString.."<"
+    .."\nMachines: "..awesomeString2.."<"
   }}
 end
 

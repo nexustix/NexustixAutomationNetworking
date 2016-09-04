@@ -40,7 +40,7 @@ end
 --relays = {}
 
 --receives = false
-function powernode.isreceiving()
+function powernode.isReceiving()
     return powernode.receives
 end
 
@@ -73,12 +73,16 @@ end
 
 ----powernode.do_spark = true
 function powernode.generateSpark(destinationID)
-    local tmpDist = world.magnitude(world.entityPosition(destinationID), object.position())
+    --local tmpDist = world.magnitude(world.entityPosition(destinationID), object.position())
     --local posHere = entity.position()
     local posHere = powernode.getRelativePos()
 
     local posThere = world.entityPosition(destinationID)
     posThere = world.callScriptedEntity(destinationID, "powernode.getRelativePos")
+
+    local tmpDist = world.magnitude(posHere, posThere)
+
+    --0.02*tmpDist,
 
     world.spawnProjectile("powerspark", posHere, entity.id(), world.distance( posThere, posHere ) , true,
     {["timeToLive"] = 0.02*tmpDist,
@@ -95,9 +99,16 @@ function powernode.update()
 
         powernode.disperseToRelays()
         for k, v in pairs(powernode.devices) do
-            if ( world.entityExists(v) ) and ( world.callScriptedEntity(v, "powernode.isReceiving") ) and ( world.callScriptedEntity(v, "powernode.getStoredPercent") < 100 ) then
-                if powernode.sendPower(v) then
-                    powernode.generateSpark(v)
+            ---powernode.generateSpark(v)
+            if ( world.entityExists(v) ) then
+                --powernode.generateSpark(v)
+                if ( world.callScriptedEntity(v, "powernode.isReceiving") ) then
+                    --powernode.generateSpark(v)
+                    if ( world.callScriptedEntity(v, "powernode.getStoredPercent") < 100 ) then
+                        if powernode.sendPower(v) then
+                            powernode.generateSpark(v)
+                        end
+                    end
                 end
             end
         end
@@ -115,8 +126,8 @@ function powernode.findConnections()
         order = "nearest"
     })
 
-    powernode.connections = {}
     powernode.relays = {}
+    powernode.devices = {}
 
     for k,v in pairs(foundIDs) do
         --sb.logInfo("[NAN] "..tostring(world.entityType(v)))

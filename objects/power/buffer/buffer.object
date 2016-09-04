@@ -1,16 +1,16 @@
 {
-  "objectName" : "nan_relay",
-  "tags": ["nan_power","nan_relay"],
+  "objectName" : "nan_buffer",
+  "tags": ["nan_power","nan_buffer"],
   "rarity" : "Common",
   "price" : 25,
-  "description" : "A relay",
-  "shortdescription" : "Power relay",
+  "description" : "A buffer",
+  "shortdescription" : "Power buffer",
   "race" : "generic",
 
-  "inventoryIcon" : "relayicon.png",
+  "inventoryIcon" : "buffericon.png",
   "orientations" : [
     {
-      "dualImage" : "relay.png:<color>.zero",
+      "dualImage" : "buffer.png:<color>.zero",
 
       "imagePosition" : [0, 0],
       "frames" : 1,
@@ -23,14 +23,14 @@
 ],
 
   "scripts" : [
-      "relay.lua",
+      "buffer.lua",
       "/scripts/powernode.lua"
   ],
   "scriptDelta" : 13,
 
-  "animation" : "relay.animation",
+  "animation" : "buffer.animation",
   "animationParts" : {
-    "switch" : "relay.png"
+    "switch" : "buffer.png"
   },
   "animationPosition" : [0, 0]
 }

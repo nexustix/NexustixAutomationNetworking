@@ -1,0 +1,8 @@
+{
+  "itemName" : "nan_tubediode",
+  "rarity" : "Common",
+  "inventoryIcon" : "tubediode.png",
+  "description" : "A vacuum tube diode",
+  "shortdescription" : "Vacuum tube diode",
+  "largeImage" : "tubediode.png"
+}

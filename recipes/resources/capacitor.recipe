@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "paper", "count" : 8 },
+    { "item" : "copperbar", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "nan_capacitor",
+    "count" : 8
+  },
+  "groups" : [ "tinkertable", "ingredients", "all" ]
+}

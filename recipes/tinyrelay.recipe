@@ -1,11 +1,12 @@
 {
   "input" : [
     { "item" : "nan_teledynamium", "count" : 1 },
-    { "item" : "nan_bluesteel", "count" : 3 }
+    { "item" : "nan_bluesteel", "count" : 2 },
+    { "item" : "nan_capacitor", "count" : 4 }
   ],
   "output" : {
     "item" : "nan_tinyrelay",
-    "count" : 8
+    "count" : 4
   },
   "groups" : [ "tinkertable", "transmission", "all"]
 }

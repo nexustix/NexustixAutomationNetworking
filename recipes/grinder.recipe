@@ -1,7 +1,8 @@
 {
   "input" : [
     { "item" : "nan_teledynamium", "count" : 1 },
-    { "item" : "nan_bluesteel", "count" : 3 }
+    { "item" : "nan_bluesteel", "count" : 5 },
+    { "item" : "nan_capacitor", "count" : 10 }
   ],
   "output" : {
     "item" : "nan_grinder",

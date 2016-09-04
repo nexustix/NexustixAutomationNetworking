@@ -1,0 +1,8 @@
+{
+  "itemName" : "nan_silverdust",
+  "rarity" : "Common",
+  "inventoryIcon" : "silverdust.png",
+  "description" : "Some silver dust",
+  "shortdescription" : "Silver dust",
+  "largeImage" : "silverdust.png"
+}

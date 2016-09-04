@@ -1,0 +1,10 @@
+{
+  "itemName" : "nan_hydrogen",
+  "rarity" : "Common",
+  "inventoryIcon" : "hydrogen.png",
+  "description" : "Some hydrogen",
+  "shortdescription" : "Hydrogen",
+  "largeImage" : "hydrogen.png",
+  "category" : "fuel",
+  "fuelAmount" : 1
+}

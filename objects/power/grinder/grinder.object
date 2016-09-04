@@ -22,6 +22,12 @@
     }
     ],
 
+    "scripts" : [
+        "grinder.lua",
+        "/scripts/powernode.lua"
+    ],
+    "scriptDelta" : 26,
+
     "openSounds" : [ "/sfx/objects/locker_open.ogg" ],
     "slotCount" : 10,
     "uiConfig" : "/interface/grinder/grinder.config",

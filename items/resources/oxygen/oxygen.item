@@ -1,0 +1,8 @@
+{
+  "itemName" : "nan_oxygen",
+  "rarity" : "Common",
+  "inventoryIcon" : "oxygen.png",
+  "description" : "Some oxygen",
+  "shortdescription" : "Oxygen",
+  "largeImage" : "oxygen.png"
+}

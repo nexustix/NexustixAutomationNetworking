@@ -1,0 +1,8 @@
+{
+  "itemName" : "nan_teledynamiumdust",
+  "rarity" : "Common",
+  "inventoryIcon" : "teledynamiumdust.png",
+  "description" : "Some teledynamium dust",
+  "shortdescription" : "Teledynamium dust",
+  "largeImage" : "teledynamiumdust.png"
+}

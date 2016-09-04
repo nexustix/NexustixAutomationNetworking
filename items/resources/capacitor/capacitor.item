@@ -1,0 +1,8 @@
+{
+  "itemName" : "nan_capacitor",
+  "rarity" : "Common",
+  "inventoryIcon" : "capacitor.png",
+  "description" : "A capacitor",
+  "shortdescription" : "Capacitor",
+  "largeImage" : "capacitor.png"
+}
